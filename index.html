@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waffles</title>
     <script src="jquery.js"></script>
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -17,88 +18,17 @@
       return '#' + Math.floor(Math.random() * 16777215).toString(16);
     };
 
-    const templates = [
-      {
-        file: '<img src="./images/moobear.png" />',
-        bg: randomHex(),
-      },
-      {
-        file: '<img src="./images/santa1.svg" />',
-        bg: '#2DB080',
-      },
-      {
-        file: '<img src="./images/santa2.png" />',
-        bg: '#E9D5DD',
-      },
-      {
-        file: '<img src="./images/santa3.jpeg" />',
-        bg: '#9FD9DB',
-      },
-      {
-        file: '<img src="./images/santa4.jpeg" />',
-        bg: '#FEEADE',
-      },
-      {
-        file: '<img src="./images/smsc.svg" />',
-        bg: randomHex(),
-      },
-      {
-        file: '<img src="./images/trashman.svg" />',
-        bg: '#414244',
-      },
-      {
-        file: '<img src="./images/smile_moo.jpg" />',
-        bg: '#414244',
-      },
-      {
-        file: '<img src="./images/satan1.png" />',
-        bg: '#2B0A16',
-      },
-      {
-        file: '<img src="./images/satan2.png" />',
-        bg: '#EC8053',
-      },
-      {
-        file: '<img src="./images/totoro1.gif"/>',
-        bg: '#FFFFFF',
-      },
-      {
-        file: '<img src="./images/totoro2.gif"/>',
-        bg: '#FFFFFF',
-      },
-      {
-        file: '<img src="./images/bear1.gif"/>',
-        bg: '#FFFFFF',
-      },
-      {
-        file: '<img src="./images/bear2.gif"/>',
-        bg: '#FFFFFF',
-      },
-      {
-        file: '<img src="./images/cookie_monster.jpg"/>',
-        bg: '#B4D0ED',
-      },
-      {
-        file: '<img src="./images/hp1.png"/>',
-        bg: '#193647',
-      },
-      {
-        file: '<img src="./images/hp2.gif"/>',
-        bg: '#FFF7F0',
-      },
-      {
-        file: '<img src="./images/max.gif"/>',
-        bg: '#95F3FF',
-      },
-    ];
+    const url = 'https://api.gitrows.com/@github/evanvin/qr/data.json';
 
-    var template = templates[Math.floor(Math.random() * templates.length)];
+    $.get(url, function (data) {
+      var template = data.data[Math.floor(Math.random() * data.data.length)];
 
-    console.log(template);
+      console.log(template);
 
-    $(function () {
-      $('#includedContent').html(template.file);
-      $('body').css('background-color', template.bg);
+      $(function () {
+        $('#includedContent').html(template.file);
+        $('body').css('background-color', template.bg || randomHex());
+      });
     });
   </script>
 </html>

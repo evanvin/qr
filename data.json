@@ -2,7 +2,7 @@
   "data": [
     {
       "file": "<img src=\"./images/moobear.png\" />",
-      "bg": "randomHex()"
+      "bg": null
     },
     {
       "file": "<img src=\"./images/santa1.svg\" />",
@@ -22,7 +22,7 @@
     },
     {
       "file": "<img src=\"./images/smsc.svg\" />",
-      "bg": "randomHex()"
+      "bg": null
     },
     {
       "file": "<img src=\"./images/trashman.svg\" />",
