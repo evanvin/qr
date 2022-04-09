@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="theme-color" content="#FFFFFF" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waffles</title>
@@ -47,10 +48,13 @@
       function (data) {
         var template = data.data[Math.floor(Math.random() * data.data.length)];
 
-        $(function () {
-          $('#includedContent').html(template.file);
-          $('body').css('background-color', template.bg || randomHex());
-        });
+        const color = template.bg || randomHex();
+
+        $('#includedContent').html(template.file);
+        $('body').css('background-color', color);
+
+        var metaThemeColor = document.querySelector('meta[name=theme-color]');
+        metaThemeColor.setAttribute('content', color);
       }
     );
   </script>
