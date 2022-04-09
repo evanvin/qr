@@ -87,6 +87,22 @@
     {
       "file": "./images/jim.jpeg",
       "bg": "#FFFFFF"
-    }
+    },
+    {
+      "file": "https://cdn.dribbble.com/users/511409/screenshots/9577276/media/ac4ae68c0d361b2748f1cf196da3bc7d.jpg",
+      "bg": "#FFFFFF"
+    },
+    {
+      "file": "https://cdn.dribbble.com/users/39609/screenshots/4437341/media/29b91047b977f62ff923799985c1cebe.jpg",
+      "bg": "#0d246b"
+    },
+    {
+      "file": "https://cdn.dribbble.com/users/957216/screenshots/3656673/media/ef3e60287b4150042820e4003b5c47e3.png",
+      "bg": "#373741"
+    },
+    {
+      "file": "https://cdn.dribbble.com/users/160244/screenshots/2523909/media/bff06fa9f17391bbda18cb91f176bb22.png",
+      "bg": "#040423"
+    }      
   ]
 }
