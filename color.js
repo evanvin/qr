@@ -20,11 +20,14 @@ window.onload = function () {
     const img = new Image();
 
     img.addEventListener('load', function () {
-      let x = colorThief.getColor(img);
+      const x = colorThief.getColor(img);
       console.log(x);
     });
 
+    let googleProxyURL =
+      'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=2592000&url=';
+
     img.crossOrigin = 'Anonymous';
-    img.src = event.target.value;
+    img.src = googleProxyURL + encodeURIComponent(event.target.value);
   });
 };
