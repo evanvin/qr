@@ -55,10 +55,8 @@
     fetch('https://api.gitrows.com/@github/evanvin/qr/data.json')
       .then((response) => response.json())
       .then((data) => {
-          console.log(data)
         var template = data.data[Math.floor(Math.random() * data.data.length)];
 
-        console.log(template)
         const color = template.bg || randomHex();
 
         document.getElementById('img').src = template.file;
