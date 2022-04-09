@@ -5,24 +5,24 @@ window.onload = function () {
     const imageElement = document.getElementById('image');
     imageElement.src = event.target.value;
 
-    // const colorThief = new ColorThief();
+    const colorThief = new ColorThief();
 
-    // // Make sure image is finished loading
-    // if (imageElement.complete) {
-    //   colorThief.getColor(imageElement);
-    // } else {
-    //   imageElement.addEventListener('load', function () {
-    //     colorThief.getColor(imageElement);
-    //   });
-    // }
+    // Make sure image is finished loading
+    if (imageElement.complete) {
+      colorThief.getColor(imageElement);
+    } else {
+      imageElement.addEventListener('load', function () {
+        colorThief.getColor(imageElement);
+      });
+    }
 
-    var img = document.createElement('img');
-    img.setAttribute('crossOrigin', '');
-    img.setAttribute('src', event.target.value);
+    // var img = document.createElement('img');
+    // img.setAttribute('crossOrigin', '');
+    // img.setAttribute('src', event.target.value);
 
-    var rgb = getAverageRGB(img);
-    document.body.style.backgroundColor =
-      'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')';
+    // var rgb = getAverageRGB(img);
+    // document.body.style.backgroundColor =
+    //   'rgb(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ')';
   });
 };
 
