@@ -2,7 +2,7 @@
   "data": [
     {
       "file": "<img src=\"./images/moobear.png\" />",
-      "bg": null
+      "bg": ""
     },
     {
       "file": "<img src=\"./images/santa1.svg\" />",
@@ -22,7 +22,7 @@
     },
     {
       "file": "<img src=\"./images/smsc.svg\" />",
-      "bg": null
+      "bg": ""
     },
     {
       "file": "<img src=\"./images/trashman.svg\" />",
