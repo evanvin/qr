@@ -34,7 +34,3 @@ const rgbToHex = (r, g, b) =>
       return hex.length === 1 ? '0' + hex : hex;
     })
     .join('');
-
-const addImage = () => {
-  console.log(url);
-};
