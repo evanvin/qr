@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "file": "<img src=\"./images/moobear.png\" />",
+      "bg": "randomHex()"
+    },
+    {
+      "file": "<img src=\"./images/santa1.svg\" />",
+      "bg": "#2DB080"
+    },
+    {
+      "file": "<img src=\"./images/santa2.png\" />",
+      "bg": "#E9D5DD"
+    },
+    {
+      "file": "<img src=\"./images/santa3.jpeg\" />",
+      "bg": "#9FD9DB"
+    },
+    {
+      "file": "<img src=\"./images/santa4.jpeg\" />",
+      "bg": "#FEEADE"
+    },
+    {
+      "file": "<img src=\"./images/smsc.svg\" />",
+      "bg": "randomHex()"
+    },
+    {
+      "file": "<img src=\"./images/trashman.svg\" />",
+      "bg": "#414244"
+    },
+    {
+      "file": "<img src=\"./images/smile_moo.jpg\" />",
+      "bg": "#414244"
+    },
+    {
+      "file": "<img src=\"./images/satan1.png\" />",
+      "bg": "#2B0A16"
+    },
+    {
+      "file": "<img src=\"./images/satan2.png\" />",
+      "bg": "#EC8053"
+    },
+    {
+      "file": "<img src=\"./images/totoro1.gif\"/>",
+      "bg": "#FFFFFF"
+    },
+    {
+      "file": "<img src=\"./images/totoro2.gif\"/>",
+      "bg": "#FFFFFF"
+    },
+    {
+      "file": "<img src=\"./images/bear1.gif\"/>",
+      "bg": "#FFFFFF"
+    },
+    {
+      "file": "<img src=\"./images/bear2.gif\"/>",
+      "bg": "#FFFFFF"
+    },
+    {
+      "file": "<img src=\"./images/cookie_monster.jpg\"/>",
+      "bg": "#B4D0ED"
+    },
+    {
+      "file": "<img src=\"./images/hp1.png\"/>",
+      "bg": "#193647"
+    },
+    {
+      "file": "<img src=\"./images/hp2.gif\"/>",
+      "bg": "#FFF7F0"
+    },
+    {
+      "file": "<img src=\"./images/max.gif\"/>",
+      "bg": "#95F3FF"
+    }
+  ]
+}
