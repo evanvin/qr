@@ -24,7 +24,7 @@
       }
 
       div img {
-        width: 350px;
+        width: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -53,8 +53,9 @@
         $('#includedContent').html(template.file);
         $('body').css('background-color', color);
 
-        var metaThemeColor = document.querySelector('meta[name=theme-color]');
-        metaThemeColor.setAttribute('content', color);
+        document
+          .querySelector('meta[name="theme-color"]')
+          .setAttribute('content', color);
       }
     );
   </script>
