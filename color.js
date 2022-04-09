@@ -3,6 +3,7 @@ let url = '';
 
 window.onload = function () {
   const inputElement = document.getElementById('url-input');
+  inputElement.focus();
 
   inputElement.addEventListener('input', (event) => {
     const imageElement = document.getElementById('image');
