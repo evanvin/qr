@@ -1,91 +1,91 @@
 {
   "data": [
     {
-      "file": "<img src=\"./images/moobear.png\" />",
+      "file": "./images/moobear.png",
       "bg": ""
     },
     {
-      "file": "<img src=\"./images/santa1.svg\" />",
+      "file": "./images/santa1.svg",
       "bg": "#2DB080"
     },
     {
-      "file": "<img src=\"./images/santa2.png\" />",
+      "file": "./images/santa2.png",
       "bg": "#E9D5DD"
     },
     {
-      "file": "<img src=\"./images/santa3.jpeg\" />",
+      "file": "./images/santa3.jpeg",
       "bg": "#9FD9DB"
     },
     {
-      "file": "<img src=\"./images/santa4.jpeg\" />",
+      "file": "./images/santa4.jpeg",
       "bg": "#FEEADE"
     },
     {
-      "file": "<img src=\"./images/trashman.svg\" />",
+      "file": "./images/trashman.svg",
       "bg": "#414244"
     },
     {
-      "file": "<img src=\"./images/smile_moo.jpg\" />",
+      "file": "./images/smile_moo.jpg",
       "bg": "#414244"
     },
     {
-      "file": "<img src=\"./images/satan1.png\" />",
+      "file": "./images/satan1.png",
       "bg": "#2B0A16"
     },
     {
-      "file": "<img src=\"./images/satan2.png\" />",
+      "file": "./images/satan2.png",
       "bg": "#EC8053"
     },
     {
-      "file": "<img src=\"./images/totoro1.gif\"/>",
+      "file": "./images/totoro1.gif",
       "bg": "#FFFFFF"
     },
     {
-      "file": "<img src=\"./images/totoro2.gif\"/>",
+      "file": "./images/totoro2.gif",
       "bg": "#FFFFFF"
     },
     {
-      "file": "<img src=\"./images/bear1.gif\"/>",
+      "file": "./images/bear1.gif",
       "bg": "#FFFFFF"
     },
     {
-      "file": "<img src=\"./images/bear2.gif\"/>",
+      "file": "./images/bear2.gif",
       "bg": "#FFFFFF"
     },
     {
-      "file": "<img src=\"./images/cookie_monster.jpg\"/>",
+      "file": "./images/cookie_monster.jpg",
       "bg": "#B4D0ED"
     },
     {
-      "file": "<img src=\"./images/hp1.png\"/>",
+      "file": "./images/hp1.png",
       "bg": "#193647"
     },
     {
-      "file": "<img src=\"./images/hp2.gif\"/>",
+      "file": "./images/hp2.gif",
       "bg": "#FFF7F0"
     },
     {
-      "file": "<img src=\"./images/max.gif\"/>",
+      "file": "./images/max.gif",
       "bg": "#95F3FF"
     },
     {
-      "file": "<img src=\"./images/scooby1.png\"/>",
+      "file": "./images/scooby1.png",
       "bg": "#DCFF00"
     },
     {
-      "file": "<img src=\"./images/scooby2.jpeg\"/>",
+      "file": "./images/scooby2.jpeg",
       "bg": "#00A9B1"
     },
     {
-      "file": "<img src=\"./images/scooby3.gif\"/>",
+      "file": "./images/scooby3.gif",
       "bg": "#44494C"
     },
     {
-      "file": "<img src=\"./images/damon.jpeg\"/>",
+      "file": "./images/damon.jpeg",
       "bg": "#FFFFFF"
     },
     {
-      "file": "<img src=\"./images/jim.jpeg\"/>",
+      "file": "./images/jim.jpeg",
       "bg": "#FFFFFF"
     }
   ]
