@@ -21,10 +21,6 @@
       "bg": "#FEEADE"
     },
     {
-      "file": "<img src=\"./images/smsc.svg\" />",
-      "bg": ""
-    },
-    {
       "file": "<img src=\"./images/trashman.svg\" />",
       "bg": "#414244"
     },

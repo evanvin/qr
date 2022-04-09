@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waffles</title>
-    <script src="jquery.js"></script>
 
     <style>
       body,
@@ -41,7 +40,9 @@
     </style>
   </head>
   <body>
-    <div id="includedContent"></div>
+    <a href=".">
+      <div id="includedContent"></div>
+    </a>
   </body>
 
   <script>
@@ -49,20 +50,22 @@
       return '#' + Math.floor(Math.random() * 16777215).toString(16);
     };
 
-    $.get(
-      'https://api.gitrows.com/@github/evanvin/qr/data.json',
-      function (data) {
+    fetch('https://api.gitrows.com/@github/evanvin/qr/data.json')
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
         var template = data.data[Math.floor(Math.random() * data.data.length)];
 
         const color = template.bg || randomHex();
 
-        $('#includedContent').html(template.file);
-        $('body').css('background-color', color);
-
+        document.getElementById('includedContent').innerHTML = template.file;
+        document.querySelector('body').style.backgroundColor = color;
         document
           .querySelector('meta[name="theme-color"]')
           .setAttribute('content', color);
-      }
-    );
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   </script>
 </html>
