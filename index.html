@@ -7,7 +7,31 @@
     <title>Waffles</title>
     <script src="jquery.js"></script>
 
-    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: relative;
+      }
+
+      div {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+
+      div img {
+        width: 350px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    </style>
   </head>
   <body>
     <div id="includedContent"></div>
@@ -18,17 +42,16 @@
       return '#' + Math.floor(Math.random() * 16777215).toString(16);
     };
 
-    const url = 'https://api.gitrows.com/@github/evanvin/qr/data.json';
+    $.get(
+      'https://api.gitrows.com/@github/evanvin/qr/data.json',
+      function (data) {
+        var template = data.data[Math.floor(Math.random() * data.data.length)];
 
-    $.get(url, function (data) {
-      var template = data.data[Math.floor(Math.random() * data.data.length)];
-
-      console.log(template);
-
-      $(function () {
-        $('#includedContent').html(template.file);
-        $('body').css('background-color', template.bg || randomHex());
-      });
-    });
+        $(function () {
+          $('#includedContent').html(template.file);
+          $('body').css('background-color', template.bg || randomHex());
+        });
+      }
+    );
   </script>
 </html>

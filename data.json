@@ -71,6 +71,26 @@
     {
       "file": "<img src=\"./images/max.gif\"/>",
       "bg": "#95F3FF"
+    },
+    {
+      "file": "<img src=\"./images/scooby1.png\"/>",
+      "bg": "#DCFF00"
+    },
+    {
+      "file": "<img src=\"./images/scooby2.jpeg\"/>",
+      "bg": "#00A9B1"
+    },
+    {
+      "file": "<img src=\"./images/scooby3.gif\"/>",
+      "bg": "#44494C"
+    },
+    {
+      "file": "<img src=\"./images/damon.jpeg\"/>",
+      "bg": "#FFFFFF"
+    },
+    {
+      "file": "<img src=\"./images/jim.jpeg\"/>",
+      "bg": "#FFFFFF"
     }
   ]
 }
